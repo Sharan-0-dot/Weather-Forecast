@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather forecast</title>
+</head>
+<body>
+    <div id="header">
+        <h2>WEATHER FORECAST</h2>
+    </div>
+    <div id="navbar-container">
+        <div id="weather-pic-container"><i class="fa-regular fa-sun"></i></div>
+        <div id="searchBar-container">
+            <select id="cities">
+                <option value="" disabled selected>Select a city</option>
+                <option value= "28.6139, 77.2090">Delhi</option>
+                <option value= "19.0760, 72.8777">Mumbai</option>
+                <option value= "12.9716, 77.5946">Bengaluru</option>
+                <option value= "17.3850, 78.4867">Hyderabad</option>
+                <option value= "13.0827, 80.2707">Chennai</option>
+                <option value= "22.5726, 88.3639">Kolkota</option>
+                <option value= "23.0225, 72.5714">Ahemdabad</option>
+                <option value= "18.5204, 73.8567">Pune</option>
+                <option value= "26.9124, 75.7873">Jaipur</option>
+                <option value= "26.8467, 80.9462">Lucknow</option>
+                <option value= "21.1702, 72.8311">Surat</option>
+                <option value= "26.4499, 80.3319">Kanpur</option>
+                <option value= "21.1458, 79.0882">Nagpur</option>
+                <option value= "25.5941, 85.1376">Patna</option>
+                <option value= "23.2599, 77.4126">Bhopal</option>
+               </select>
+           <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="display-box">
+            <div id="display-info">
+                <div id="city-display">
+                    <h3>CITY</h3>
+                    <p id="cityName">Select City</p> 
+                </div>
+                <div id="weather-display">
+                    <h4>WEATHER</h4>
+                    <p id="weather">----</p>
+                </div>
+                <div id="temp-display">
+                    <h4>TEMPERATURE</h4>
+                    <p id="temperature">---</p>
+                </div>
+            </div>
+            <div id="days-info">
+                <div id="humidity">
+                    HUMIDITY
+                    <p id="hum"></p>
+                </div>
+                <div id="pressure">
+                    PRESSURE
+                    <p id="pre"></p>
+                </div>
+                <div id="wind">
+                    WIND SPEED
+                    <pid id="win"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; 2024</p>
+        <p>Developed By : Sharan S C</p>
+        <p>Email : <a href="mailto:sharansc482@gmail.com" style="color:white"> sharansc482@gmail.com</a></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
